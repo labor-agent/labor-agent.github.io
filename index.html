@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Large Language Models for Orchestrating Bimanual Robots</title>
+
+    <meta name="description" content="Large Language Models for Orchestrating Bimanual Robots">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+        <!--FACEBOOK-->
+    <!-- <meta property="og:image" content="https://say-can.github.io/img/share_image.png"> -->
+    <!-- <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="682">
+    <meta property="og:image:height" content="682">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://labor-agent.github.io/"/> -->
+    <!-- <meta property="og:title" content="SayCan" /> -->
+    <!-- <meta property="og:description" content="Project page for Large Language Models for Orchestrating Bimanual Robots." /> -->
+
+        <!--TWITTER-->
+    <!-- <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SayCan" />
+    <meta name="twitter:description" content="Project page for Do As I Can, Not As I Say: Grounding Language in Robotic Affordances." />
+    <meta name="twitter:image" content="https://say-can.github.io/img/share_image.png" /> -->
+
+
+<!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+  <!-- <link rel="icon" type="image/png" href="img/seal_icon.png"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-52J0PM8XKV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-52J0PM8XKV');
+</script>
+	
+    <style>
+        .nav-pills {
+          position: relative;
+          display: inline;
+        }
+        .imtip {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <b><font size="+6">LABOR Agent: Large Language Models for Orchestrating Bimanual Robots  </font></b> </br> </br> 
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center", style="font-size: larger;">
+                <ul class="list-inline">
+                <br>
+                <li><a href="https://kchu.github.io">Kun Chu*</a></li>
+                <li><a href="https://xf-zhao.github.io">Xufeng Zhao</a></li> <li><a href="https://www.inf.uni-hamburg.de/en/inst/ab/wtm/people/weber.html">Cornelius Weber</a></li> 
+                <li><a href="https://mengdi-li.github.io/">Mengdi Li</a></li> <li>Wenhao Lu</li> 
+                <li><a href="https://www.inf.uni-hamburg.de/en/inst/ab/wtm/people/wermter.html">Stefan
+                    Wermter</a></li>
+                
+                <br><br>
+                    <a href="https://www.inf.uni-hamburg.de/en/inst/ab/wtm.html", style="font-size: larger;">
+                    <image src="img/wtm-logo.jpg" height="70px"> Knowledge Technology Group, University of Hamburg  </a>
+                    </br></br>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="">
+                            <image src="img/paper_small.png" height="60px">
+                            <image src="img/new.png" height="20px" class="imtip">
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                            <image src="img/youtube_icon.png" height="60px">
+                                <h4><strong>Video</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/kchu">
+                            <image src="img/github.png" height="60px">
+                                <image src="img/new.png" height="20px" class="imtip">
+                                <h4><strong>Code</strong></h4>
+                            </a>
+                        <li>
+                            <!-- <a href="https://sites.research.google/palm-saycan">
+                            <image src="img/demo.png" height="60px">
+                                <image src="img/new.png" height="20px" class="imtip">
+                                <h4><strong>Demo</strong></h4>
+                            </a> -->
+                        </li> 
+                        </li> 
+                    </ul>
+                </div>
+        </div>
+
+
+         <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+           
+                <h3>
+                    What's New
+                </h3>
+                <p class="text-justify">
+
+                  
+                <ul>
+                    <!-- <li><font color="#5a00b4">[3/26/2024]</font> We <a href="#open-source">open-sourced</a> the LABOR implementation on the NICOL robot. </li> -->
+                    <li> [3/28/2024] Initial release of LABOR agent. </li>
+                </ul>
+
+            </div>
+        </div>
+        
+        <!-- <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Horizontal Display</title>
+            <style>
+                .container {
+                    display: flex;
+                    justify-content: center; /* Optional: Align content horizontally */
+                    align-items: center; /* Optional: Align content vertically */
+                    flex-wrap: wrap; /* Allow items to wrap if needed */
+                }
+                .container p {
+                    flex: 1; /* Equal width for all items */
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <p style="text-align:left;">
+                    <img src="img/labor.png" class="img-responsive">
+                </p>
+                <p style="text-align:right;">
+                    <video id="v0" width="100%" playsinline autoplay muted loop controls>
+                        <source src="img/labor_demo.mp4" type="video/mp4">
+                    </video>
+                </p>
+            </div>
+        </body> -->
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <p style="text-align:justify">
+        	    	<video id="v0" width="100%" playsinline autoplay muted loop controls>
+                       <source src="img/labor_demo.mp4" type="video/mp4">
+                   </video>
+                </p>
+
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                    Although there has been rapid progress in endowing robots with the ability to solve complex manipulation tasks, generating control policies for bimanual robots to solve tasks involving two hands is still challenging because of the difficulties in effective temporal and spatial coordination. With emergent abilities in terms of step-by-step reasoning and in-context learning, Large Language Models (LLMs) have taken control of a variety of robotic tasks. However, the nature of language communication via a single sequence of discrete symbols makes LLM-based coordination in continuous space a particular challenge for bimanual tasks. To tackle this challenge for the first time by an LLM, we present <b>LA</b>nguage-model-based <b>B</b>imanual <b>OR</b>chestration (<b>LABOR</b>), an agent utilizing an LLM to analyze task configurations and devise coordination control policies for addressing long-horizon bimanual tasks. The framework is evaluated on the NICOL humanoid robot in everyday tasks. Reported success rates indicate that overall coordination efficiency is close to optimal performance, while failure rates are analyzed separately for different tasks, covering spatial and temporal coordination and skill selection, which vary across tasks. The project website can be found at \url{http://labor-agent.github.io}
+                </p>
+             <!-- <p style="text-align:center;">
+        	    	<video id="v0" width="100%" playsinline autoplay muted loop controls>
+                       <source src="img/palm_saycan_teaser_compressed.mp4" type="video/mp4">
+                   </video>
+                </p> -->
+            </div>
+        </div>
+
+        <p style="text-align:center;">
+            <image width="40%" src="img/labor.png" class="img-responsive">
+        </p>
+        <!-- <p style="text-align:center;">
+            <image src="img/nicol_hold_bowl.png" class="img-responsive">
+        </p> -->
+
+        <!-- <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Environments
+                </h3>
+                <p style="text-align:center;">
+                    <image src="img/nicol_workspace.png" class="img-responsive"></image>
+                    <!-- <image src="img/gpt3-cropped2.png" class="img-responsive"> -->
+                </p>
+		<!-- <p class="text-justify">
+		We benchmarked 
+		</p> -->
+		
+		<!-- <p class="text-justify">
+			We visualize
+		</p> -->
+		
+	    </div>
+        </div>
+
+<!-- 
+	<div class="row">
+        <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Video
+                </h3>
+                <div class="text-center">
+                    <div style="position:relative;padding-top:56.25%;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ysFav0b472w" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Results
+                </h3>
+		<p class="text-justify">
+		We benchmarked 
+		</p>
+		
+		<p class="text-justify">
+			We 
+		</p>
+		
+	    </div>
+        </div>
+            
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    What's Next
+                </h3>
+                <p style="text-align:center;">
+                    <image src="img/nicol_workspace_real.jpeg" class="img-responsive">
+                </p>
+		<p class="text-justify">
+		Sim-to-real transfer
+		</p>
+		
+		<p class="text-justify">
+			We 
+		</p>
+		
+	    </div>
+        </div> -->
+
+         <!-- <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation 
+                </h3> <a href="https://arxiv.org/abs/2204.01691">[arxiv version]</a>
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" readonly>
+@inproceedings{chu2024,
+    title={Large Language Models for Orchestrating Bimanual Robots},
+    author={},
+    booktitle={},
+    year={2024}
+}</textarea> 
+                </div>
+            </div>
+             
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+                    The authors would like to thank Jan-Gerrit Habekost and Lennart Clasmeier for their work on the NICOL robot in the simulation.
+                    <br><br>
+                The website template was borrowed from <a href="http://jonbarron.info/">Jon Barron</a>.
+                </p>
+            </div>
+        </div>
+    </div> -->
+</body>
+</html>
